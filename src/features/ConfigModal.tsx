@@ -18,7 +18,7 @@ import { useLocalStorage } from "usehooks-ts"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
 export function ConfigModal() {
-  const [lsConfigs, setLSConfigs, removeLSConfigs] = useLocalStorage(
+  const [lsConfigs, setLSConfigs, _] = useLocalStorage(
     "ripConfigs",
     {},
     { serializer: JSON.stringify, deserializer: JSON.parse },

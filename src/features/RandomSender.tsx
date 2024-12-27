@@ -36,6 +36,8 @@ export function RandomSender() {
   const receiving = useAppSelector((state) => state.sni.receiving)
   const dispatch = useAppDispatch()
 
+  let allCategories = {...definedCategories}
+
   const compatible_seed =
     sram["rom_name"] &&
     ["OR"].includes(
@@ -60,6 +62,17 @@ export function RandomSender() {
         GAME_FPS,
     )
   }
+
+  useEffect(() => {
+    if (!config) return
+    if ('categories' in JSON.parse(lsConfigs[config])) {
+      allCategories = {
+        ...allCategories,
+        ...JSON.parse(lsConfigs[config]).categories,
+      }
+    }
+
+  }, [config])
 
   useEffect(() => {
     if (compatible_seed && seed_name && seed_name in lsGames) {
@@ -87,8 +100,8 @@ export function RandomSender() {
   const getRandomItem = (rng: any, seedRng: any, items: string[]) => {
     let item_list: string[] = []
     const round1_item = items[Math.floor(seedRng() * items.length)]
-    if (round1_item in definedCategories) {
-      let category = definedCategories[round1_item]
+    if (round1_item in allCategories) {
+      let category = allCategories[round1_item]
       item_list = [...item_list, ...category]
     } else if (round1_item in definedItems) {
       item_list.push(round1_item)
@@ -157,7 +170,7 @@ export function RandomSender() {
       (a, b) => a[1].start - b[1].start,
     )
     // add ends to intervals
-    intervals.forEach(([key, value], index) => {
+    intervals.forEach(([_, value], index) => {
       if (index < intervals.length - 1) {
         if (value.frequency == 0) {
           value.frequency = 0.1
@@ -207,7 +220,7 @@ export function RandomSender() {
       if (!confirmed) return
       setLSGames(
         Object.fromEntries(
-          Object.entries(lsGames).filter(([key, value]) => key !== seed_name),
+          Object.entries(lsGames).filter(([key, _]) => key !== seed_name),
         ),
       )
       setStarted(false)
