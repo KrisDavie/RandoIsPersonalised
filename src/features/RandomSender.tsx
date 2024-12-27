@@ -13,16 +13,15 @@ import {
   categories as definedCategories,
   items as definedItems,
 } from "./ConfigParser"
-import def from "ajv/dist/vocabularies/discriminator"
 
 export function RandomSender() {
-  const [lsConfigs, setLSConfigs, removeLSConfigs] = useLocalStorage(
+  const [lsConfigs] = useLocalStorage(
     "ripConfigs",
     {},
     { serializer: JSON.stringify, deserializer: JSON.parse },
   )
 
-  const [lsGames, setLSGames, removeLSGames] = useLocalStorage(
+  const [lsGames, setLSGames] = useLocalStorage(
     "ripGames",
     {},
     { serializer: JSON.stringify, deserializer: JSON.parse },
@@ -30,6 +29,7 @@ export function RandomSender() {
   const [started, setStarted] = useState(false)
   const [config, setConfig] = useState("")
   const [seededRun, setSeededRun] = useState(false)
+  const [rngSeed, setRngSeed] = useState("")
   const sram: SRAM = useAppSelector((state) => state.sni.sram)
   const sentItems = useAppSelector((state) => state.sni.itemHistory)
   const itemQueue = useAppSelector((state) => state.sni.itemQueue)
@@ -66,6 +66,7 @@ export function RandomSender() {
       setStarted(true)
       setConfig(lsGames[seed_name].config)
       setSeededRun(lsGames[seed_name].seed == seed_name)
+      setRngSeed(lsGames[seed_name].seed.toString())
       dispatch(setItemHistory([]))
       dispatch(setItemQueue([]))
     }
@@ -75,7 +76,7 @@ export function RandomSender() {
     if (!started || !sram || !ingame) return
     const prev_ix = sram["multiinfo"][0] * 256 + sram["multiinfo"][1]
     const itemsToSend = getItemsToSend(
-      seed_name,
+      lsGames[seed_name].seed,
       JSON.parse(lsConfigs[config]).settings.intervals,
       prev_ix,
       Math.round(((game_time_seconds / 60) + Number.EPSILON) * 100) / 100,
@@ -212,6 +213,9 @@ export function RandomSender() {
       setStarted(false)
       setConfig("")
       setSeededRun(false)
+      setRngSeed("")
+      dispatch(setItemHistory([]))
+      dispatch(setItemQueue([]))
     } else {
       let seedArr = new Uint32Array(1)
       if (!seededRun) {
@@ -221,6 +225,7 @@ export function RandomSender() {
         seed: seededRun ? seed_name : seedArr[0],
         config: config,
       }
+      setRngSeed(gameInfo.seed.toString())
       setLSGames({ ...lsGames, [seed_name]: gameInfo })
       setStarted(true)
     }
@@ -230,7 +235,9 @@ export function RandomSender() {
     <div>
       <h1 className="text-2xl font-bold">Rando Is Personalized</h1>
       <br />
-      Seed: {seed_name}
+      ROM: {seed_name}
+      <br />
+      {rngSeed && `RNG Seed: ${rngSeed.toString()}`}
       <br />
       <br />
       IGT: {new Date(game_time_seconds * 1000).toISOString().slice(11, 19)}
