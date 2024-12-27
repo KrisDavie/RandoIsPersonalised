@@ -1,0 +1,912 @@
+{
+    "Progressive Bow": {
+        "loc": [
+            0,
+            1
+        ],
+        "id": 100
+    },
+    "Book of Mudora": {
+        "loc": [
+            2,
+            1
+        ],
+        "id": 29
+    },
+    "Hammer": {
+        "loc": [
+            1,
+            6
+        ],
+        "id": 9
+    },
+    "Hookshot": {
+        "loc": [
+            0,
+            6
+        ],
+        "id": 10
+    },
+    "Magic Mirror": {
+        "loc": [
+            2,
+            5
+        ],
+        "id": 26
+    },
+    "Ocarina": {
+        "loc": [
+            1,
+            8
+        ],
+        "id": 20
+    },
+    "Ocarina (Activated)": {
+        "loc": [
+            1,
+            8
+        ],
+        "id": 74
+    },
+    "Pegasus Boots": {
+        "loc": [
+            4,
+            3
+        ],
+        "id": 75
+    },
+    "Cape": {
+        "loc": [
+            2,
+            4
+        ],
+        "id": 25
+    },
+    "Mushroom": {
+        "loc": [
+            0,
+            7
+        ],
+        "id": 41
+    },
+    "Shovel": {
+        "loc": [
+            1,
+            7
+        ],
+        "id": 19
+    },
+    "Lamp": {
+        "loc": [
+            1,
+            5
+        ],
+        "id": 18
+    },
+    "Magic Powder": {
+        "loc": [
+            0,
+            8
+        ],
+        "id": 13
+    },
+    "Moon Pearl": {
+        "loc": [
+            4,
+            8
+        ],
+        "id": 31
+    },
+    "Cane of Somaria": {
+        "loc": [
+            2,
+            2
+        ],
+        "id": 21
+    },
+    "Fire Rod": {
+        "loc": [
+            1,
+            0
+        ],
+        "id": 7
+    },
+    "Flippers": {
+        "loc": [
+            4,
+            7
+        ],
+        "id": 30
+    },
+    "Ice Rod": {
+        "loc": [
+            1,
+            1
+        ],
+        "id": 8
+    },
+    "Bombos": {
+        "loc": [
+            1,
+            2
+        ],
+        "id": 15
+    },
+    "Ether": {
+        "loc": [
+            1,
+            3
+        ],
+        "id": 16
+    },
+    "Quake": {
+        "loc": [
+            1,
+            4
+        ],
+        "id": 17
+    },
+    "Bottle": {
+        "loc": [
+            3,
+            0
+        ],
+        "id": 22
+    },
+    "Bottle (Red Potion)": {
+        "loc": [
+            3,
+            1
+        ],
+        "id": 43
+    },
+    "Bottle (Green Potion)": {
+        "loc": [
+            3,
+            2
+        ],
+        "id": 44
+    },
+    "Bottle (Blue Potion)": {
+        "loc": [
+            3,
+            3
+        ],
+        "id": 45
+    },
+    "Bottle (Fairy)": {
+        "loc": [
+            3,
+            6
+        ],
+        "id": 61
+    },
+    "Bottle (Bee)": {
+        "loc": [
+            3,
+            4
+        ],
+        "id": 60
+    },
+    "Bottle (Good Bee)": {
+        "loc": [
+            3,
+            5
+        ],
+        "id": 72
+    },
+    "Progressive Sword": {
+        "loc": [
+            7,
+            7
+        ],
+        "id": 94
+    },
+    "Progressive Glove": {
+        "loc": [
+            4,
+            6
+        ],
+        "id": 97
+    },
+    "Green Pendant": {
+        "loc": [
+            8,
+            10
+        ],
+        "id": 55
+    },
+    "Blue Pendant": {
+        "loc": [
+            8,
+            11
+        ],
+        "id": 57
+    },
+    "Red Pendant": {
+        "loc": [
+            8,
+            12
+        ],
+        "id": 56
+    },
+    "Triforce Piece": {
+        "loc": [
+            8,
+            15
+        ],
+        "id": 108
+    },
+    "Crystal 1": {
+        "loc": [
+            8,
+            13
+        ],
+        "id": 177
+    },
+    "Crystal 2": {
+        "loc": [
+            8,
+            13
+        ],
+        "id": 180
+    },
+    "Crystal 3": {
+        "loc": [
+            8,
+            13
+        ],
+        "id": 182
+    },
+    "Crystal 4": {
+        "loc": [
+            8,
+            13
+        ],
+        "id": 181
+    },
+    "Crystal 5": {
+        "loc": [
+            8,
+            14
+        ],
+        "id": 178
+    },
+    "Crystal 6": {
+        "loc": [
+            8,
+            14
+        ],
+        "id": 176
+    },
+    "Crystal 7": {
+        "loc": [
+            8,
+            13
+        ],
+        "id": 179
+    },
+    "Single Arrow": {
+        "loc": [
+            6,
+            6
+        ],
+        "id": 67
+    },
+    "Arrows (10)": {
+        "loc": [
+            6,
+            7
+        ],
+        "id": 68
+    },
+    "Arrow Upgrade (+10)": {
+        "loc": [
+            5,
+            7
+        ],
+        "id": 84
+    },
+    "Arrow Upgrade (+5)": {
+        "loc": [
+            5,
+            7
+        ],
+        "id": 83
+    },
+    "Single Bomb": {
+        "loc": [
+            2,
+            6
+        ],
+        "id": 39
+    },
+    "Arrows (5)": {
+        "loc": [
+            6,
+            7
+        ],
+        "id": 213
+    },
+    "Small Magic": {
+        "loc": [
+            5,
+            3
+        ],
+        "id": 69
+    },
+    "Big Magic": {
+        "loc": [
+            5,
+            4
+        ],
+        "id": 212
+    },
+    "Chicken": {
+        "loc": [
+            8,
+            0
+        ],
+        "id": 211
+    },
+    "Bombs (3)": {
+        "loc": [
+            2,
+            7
+        ],
+        "id": 40
+    },
+    "Bombs (10)": {
+        "loc": [
+            2,
+            8
+        ],
+        "id": 49
+    },
+    "Bomb Upgrade (+10)": {
+        "loc": [
+            3,
+            8
+        ],
+        "id": 82
+    },
+    "Bomb Upgrade (+5)": {
+        "loc": [
+            3,
+            7
+        ],
+        "id": 81
+    },
+    "Progressive Armor": {
+        "loc": [
+            4,
+            0
+        ],
+        "id": 96
+    },
+    "Blue Boomerang": {
+        "loc": [
+            0,
+            4
+        ],
+        "id": 12
+    },
+    "Red Boomerang": {
+        "loc": [
+            0,
+            5
+        ],
+        "id": 42
+    },
+    "Progressive Shield": {
+        "loc": [
+            7,
+            8
+        ],
+        "id": 95
+    },
+    "Bug Catching Net": {
+        "loc": [
+            2,
+            0
+        ],
+        "id": 33
+    },
+    "Cane of Byrna": {
+        "loc": [
+            2,
+            3
+        ],
+        "id": 24
+    },
+    "Boss Heart Container": {
+        "loc": [
+            5,
+            1
+        ],
+        "id": 62
+    },
+    "Sanctuary Heart Container": {
+        "loc": [
+            5,
+            1
+        ],
+        "id": 63
+    },
+    "Piece of Heart": {
+        "loc": [
+            5,
+            0
+        ],
+        "id": 23
+    },
+    "Rupee (1)": {
+        "loc": [
+            6,
+            0
+        ],
+        "id": 52
+    },
+    "Rupees (5)": {
+        "loc": [
+            6,
+            1
+        ],
+        "id": 53
+    },
+    "Rupees (20)": {
+        "loc": [
+            6,
+            2
+        ],
+        "id": 54
+    },
+    "Rupees (50)": {
+        "loc": [
+            6,
+            3
+        ],
+        "id": 65
+    },
+    "Rupees (100)": {
+        "loc": [
+            6,
+            4
+        ],
+        "id": 64
+    },
+    "Rupees (300)": {
+        "loc": [
+            6,
+            5
+        ],
+        "id": 70
+    },
+    "Magic Upgrade (1/2)": {
+        "loc": [
+            5,
+            6
+        ],
+        "id": 78
+    },
+    "Magic Upgrade (1/4)": {
+        "loc": [
+            5,
+            6
+        ],
+        "id": 79
+    },
+    "Small Key (Eastern Palace)": {
+        "loc": [
+            1,
+            11
+        ],
+        "id": 162
+    },
+    "Big Key (Eastern Palace)": {
+        "loc": [
+            0,
+            11
+        ],
+        "id": 157
+    },
+    "Compass (Eastern Palace)": {
+        "loc": [
+            3,
+            11
+        ],
+        "id": 141
+    },
+    "Map (Eastern Palace)": {
+        "loc": [
+            2,
+            11
+        ],
+        "id": 125
+    },
+    "Small Key (Desert Palace)": {
+        "loc": [
+            1,
+            12
+        ],
+        "id": 163
+    },
+    "Big Key (Desert Palace)": {
+        "loc": [
+            0,
+            12
+        ],
+        "id": 156
+    },
+    "Compass (Desert Palace)": {
+        "loc": [
+            3,
+            12
+        ],
+        "id": 140
+    },
+    "Map (Desert Palace)": {
+        "loc": [
+            2,
+            12
+        ],
+        "id": 124
+    },
+    "Small Key (Tower of Hera)": {
+        "loc": [
+            1,
+            13
+        ],
+        "id": 170
+    },
+    "Big Key (Tower of Hera)": {
+        "loc": [
+            0,
+            13
+        ],
+        "id": 149
+    },
+    "Compass (Tower of Hera)": {
+        "loc": [
+            3,
+            13
+        ],
+        "id": 133
+    },
+    "Map (Tower of Hera)": {
+        "loc": [
+            2,
+            13
+        ],
+        "id": 117
+    },
+    "Small Key (Escape)": {
+        "loc": [
+            1,
+            10
+        ],
+        "id": 160
+    },
+    "Big Key (Escape)": {
+        "loc": [
+            0,
+            10
+        ],
+        "id": 159
+    },
+    "Compass (Escape)": {
+        "loc": [
+            3,
+            10
+        ],
+        "id": 143
+    },
+    "Map (Escape)": {
+        "loc": [
+            2,
+            10
+        ],
+        "id": 127
+    },
+    "Small Key (Agahnims Tower)": {
+        "loc": [
+            1,
+            14
+        ],
+        "id": 164
+    },
+    "Big Key (Agahnims Tower)": {
+        "loc": [
+            0,
+            14
+        ],
+        "id": 155
+    },
+    "Compass (Agahnims Tower)": {
+        "loc": [
+            3,
+            14
+        ],
+        "id": 139
+    },
+    "Map (Agahnims Tower)": {
+        "loc": [
+            2,
+            14
+        ],
+        "id": 123
+    },
+    "Small Key (Palace of Darkness)": {
+        "loc": [
+            1,
+            15
+        ],
+        "id": 166
+    },
+    "Big Key (Palace of Darkness)": {
+        "loc": [
+            0,
+            15
+        ],
+        "id": 153
+    },
+    "Compass (Palace of Darkness)": {
+        "loc": [
+            3,
+            15
+        ],
+        "id": 137
+    },
+    "Map (Palace of Darkness)": {
+        "loc": [
+            2,
+            15
+        ],
+        "id": 121
+    },
+    "Small Key (Thieves Town)": {
+        "loc": [
+            5,
+            11
+        ],
+        "id": 171
+    },
+    "Big Key (Thieves Town)": {
+        "loc": [
+            4,
+            11
+        ],
+        "id": 148
+    },
+    "Compass (Thieves Town)": {
+        "loc": [
+            7,
+            11
+        ],
+        "id": 132
+    },
+    "Map (Thieves Town)": {
+        "loc": [
+            6,
+            11
+        ],
+        "id": 116
+    },
+    "Small Key (Skull Woods)": {
+        "loc": [
+            5,
+            10
+        ],
+        "id": 168
+    },
+    "Big Key (Skull Woods)": {
+        "loc": [
+            4,
+            10
+        ],
+        "id": 151
+    },
+    "Compass (Skull Woods)": {
+        "loc": [
+            7,
+            10
+        ],
+        "id": 135
+    },
+    "Map (Skull Woods)": {
+        "loc": [
+            6,
+            10
+        ],
+        "id": 119
+    },
+    "Small Key (Swamp Palace)": {
+        "loc": [
+            1,
+            16
+        ],
+        "id": 165
+    },
+    "Big Key (Swamp Palace)": {
+        "loc": [
+            0,
+            16
+        ],
+        "id": 154
+    },
+    "Compass (Swamp Palace)": {
+        "loc": [
+            3,
+            16
+        ],
+        "id": 138
+    },
+    "Map (Swamp Palace)": {
+        "loc": [
+            2,
+            16
+        ],
+        "id": 122
+    },
+    "Small Key (Ice Palace)": {
+        "loc": [
+            5,
+            12
+        ],
+        "id": 169
+    },
+    "Big Key (Ice Palace)": {
+        "loc": [
+            4,
+            12
+        ],
+        "id": 150
+    },
+    "Compass (Ice Palace)": {
+        "loc": [
+            7,
+            12
+        ],
+        "id": 134
+    },
+    "Map (Ice Palace)": {
+        "loc": [
+            6,
+            12
+        ],
+        "id": 118
+    },
+    "Small Key (Misery Mire)": {
+        "loc": [
+            5,
+            13
+        ],
+        "id": 167
+    },
+    "Big Key (Misery Mire)": {
+        "loc": [
+            4,
+            13
+        ],
+        "id": 152
+    },
+    "Compass (Misery Mire)": {
+        "loc": [
+            7,
+            13
+        ],
+        "id": 136
+    },
+    "Map (Misery Mire)": {
+        "loc": [
+            6,
+            13
+        ],
+        "id": 120
+    },
+    "Small Key (Turtle Rock)": {
+        "loc": [
+            5,
+            14
+        ],
+        "id": 172
+    },
+    "Big Key (Turtle Rock)": {
+        "loc": [
+            4,
+            14
+        ],
+        "id": 147
+    },
+    "Compass (Turtle Rock)": {
+        "loc": [
+            7,
+            14
+        ],
+        "id": 131
+    },
+    "Map (Turtle Rock)": {
+        "loc": [
+            6,
+            14
+        ],
+        "id": 115
+    },
+    "Small Key (Ganons Tower)": {
+        "loc": [
+            5,
+            15
+        ],
+        "id": 173
+    },
+    "Big Key (Ganons Tower)": {
+        "loc": [
+            4,
+            15
+        ],
+        "id": 146
+    },
+    "Compass (Ganons Tower)": {
+        "loc": [
+            7,
+            15
+        ],
+        "id": 130
+    },
+    "Map (Ganons Tower)": {
+        "loc": [
+            6,
+            15
+        ],
+        "id": 114
+    },
+    "Small Key (Universal)": {
+        "loc": [
+            5,
+            16
+        ],
+        "id": 175
+    },
+    "Bee Trap": {
+        "loc": [
+            8,
+            4
+        ],
+        "id": 208
+    },
+    "Bee": {
+        "loc": [
+            8,
+            4
+        ],
+        "id": 14
+    },
+    "Good Bee": {
+        "loc": [
+            8,
+            4
+        ],
+        "id": 214
+    },
+    "Small Heart": {
+        "loc": [
+            5,
+            2
+        ],
+        "id": 66
+    },
+    "Apples": {
+        "loc": [
+            5,
+            2
+        ],
+        "id": 209
+    },
+    "Fairy": {
+        "loc": [
+            8,
+            5
+        ],
+        "id": 210
+    }
+}

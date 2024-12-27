@@ -1,0 +1,144 @@
+{
+    "unique": [
+        "Progressive Glove",
+        "Progressive Sword",
+        "Progressive Bow",
+        "Progressive Shield",
+        "Red Boomerang",
+        "Blue Boomerang",
+        "Hookshot",
+        "Magic Powder",
+        "Fire Rod",
+        "Ice Rod",
+        "Bombos",
+        "Ether",
+        "Quake",
+        "Lamp",
+        "Hammer",
+        "Ocarina",
+        "Ocarina (Activated)",
+        "Bug Catching Net",
+        "Book of Mudora",
+        "Shovel",
+        "Bottle",
+        "Cane of Somaria",
+        "Cane of Byrna",
+        "Cape",
+        "Magic Mirror",
+        "Pegasus Boots",
+        "Flippers",
+        "Moon Pearl",
+        "Mushroom",
+        "Magic Upgrade (1/2)"
+    ],
+    "boomerang": [
+        "Blue Boomerang",
+        "Red Boomerang"
+    ],
+    "progressive": [
+        "Progressive Glove",
+        "Progressive Sword",
+        "Progressive Bow",
+        "Progressive Shield",
+        "Progressive Armor",
+        "Magic Upgrade (1/2)",
+        "Bomb Upgrade (+10)",
+        "Arrow Upgrade (+10)"
+    ],
+    "big_key": [
+        "Big Key (Escape)",
+        "Big Key (Eastern Palace)",
+        "Big Key (Desert Palace)",
+        "Big Key (Tower of Hera)",
+        "Big Key (Agahnims Tower)",
+        "Big Key (Palace of Darkness)",
+        "Big Key (Swamp Palace)",
+        "Big Key (Skull Woods)",
+        "Big Key (Thieves Town)",
+        "Big Key (Ice Palace)",
+        "Big Key (Misery Mire)",
+        "Big Key (Turtle Rock)",
+        "Big Key (Ganons Tower)"
+    ],
+    "small_key": [
+        "Small Key (Escape)",
+        "Small Key (Eastern Palace)",
+        "Small Key (Desert Palace)",
+        "Small Key (Tower of Hera)",
+        "Small Key (Agahnims Tower)",
+        "Small Key (Palace of Darkness)",
+        "Small Key (Swamp Palace)",
+        "Small Key (Skull Woods)",
+        "Small Key (Thieves Town)",
+        "Small Key (Ice Palace)",
+        "Small Key (Misery Mire)",
+        "Small Key (Turtle Rock)",
+        "Small Key (Ganons Tower)"
+    ],
+    "bottle": [
+        "Bottle",
+        "Bottle (Red Potion)",
+        "Bottle (Green Potion)",
+        "Bottle (Blue Potion)",
+        "Bottle (Bee)",
+        "Bottle (Good Bee)",
+        "Bottle (Fairy)"
+    ],
+    "medallion": [
+        "Bombos",
+        "Ether",
+        "Quake"
+    ],
+    "safety": [
+        "Progressive Armor",
+        "Progressive Shield",
+        "Cane of Byrna",
+        "Cape",
+        "Sanctuary Heart Container"
+    ],
+    "ammo": [
+        "Single Arrow",
+        "Arrows (5)",
+        "Arrows (10)",
+        "Single Bomb",
+        "Bombs (3)",
+        "Bombs (10)",
+        "Small Magic",
+        "Big Magic",
+        "Small Heart",
+        "Apples",
+        "Fairy"
+    ],
+    "capacity": [
+        "Arrow Upgrade (+5)",
+        "Arrow Upgrade (+10)",
+        "Bomb Upgrade (+5)",
+        "Bomb Upgrade (+10)",
+        "Magic Upgrade (1/2)"
+    ],
+    "money": [
+        "Rupee (1)",
+        "Rupees (5)",
+        "Rupees (20)",
+        "Rupees (50)",
+        "Rupees (100)",
+        "Rupees (300)"
+    ],
+    "prize": [
+        "Green Pendant",
+        "Blue Pendant",
+        "Red Pendant",
+        "Crystal 1",
+        "Crystal 2",
+        "Crystal 3",
+        "Crystal 4",
+        "Crystal 5",
+        "Crystal 6",
+        "Crystal 7",
+        "Triforce Piece"
+    ],
+    "animals": [ 
+       "Bee Trap",
+       "Chicken"
+    ]
+}
