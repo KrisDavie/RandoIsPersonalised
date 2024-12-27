@@ -1,9 +1,5 @@
 {
     "unique": [
-        "Progressive Glove",
-        "Progressive Sword",
-        "Progressive Bow",
-        "Progressive Shield",
         "Red Boomerang",
         "Blue Boomerang",
         "Hookshot",
@@ -16,11 +12,9 @@
         "Lamp",
         "Hammer",
         "Ocarina",
-        "Ocarina (Activated)",
         "Bug Catching Net",
         "Book of Mudora",
         "Shovel",
-        "Bottle",
         "Cane of Somaria",
         "Cane of Byrna",
         "Cape",
@@ -29,11 +23,11 @@
         "Flippers",
         "Moon Pearl",
         "Mushroom",
-        "Magic Upgrade (1/2)"
+        "Single Arrow"
     ],
     "boomerang": [
-        "Blue Boomerang",
-        "Red Boomerang"
+        "Red Boomerang",
+        "Blue Boomerang"
     ],
     "progressive": [
         "Progressive Glove",
@@ -94,7 +88,8 @@
         "Progressive Shield",
         "Cane of Byrna",
         "Cape",
-        "Sanctuary Heart Container"
+        "Boss Heart Container",
+        "Bottle"
     ],
     "ammo": [
         "Single Arrow",
