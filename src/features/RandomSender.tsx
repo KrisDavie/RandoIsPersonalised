@@ -12,6 +12,7 @@ import { Separator } from "@/components/ui/separator"
 import {
   categories as definedCategories,
   items as definedItems,
+  ICategories,
 } from "./ConfigParser"
 
 export function RandomSender() {
@@ -30,13 +31,12 @@ export function RandomSender() {
   const [config, setConfig] = useState("")
   const [seededRun, setSeededRun] = useState(false)
   const [rngSeed, setRngSeed] = useState("")
+  const [allCategories, setAllCategories] = useState<ICategories>({})
   const sram: SRAM = useAppSelector((state) => state.sni.sram)
   const sentItems = useAppSelector((state) => state.sni.itemHistory)
   const itemQueue = useAppSelector((state) => state.sni.itemQueue)
   const receiving = useAppSelector((state) => state.sni.receiving)
   const dispatch = useAppDispatch()
-
-  let allCategories = {...definedCategories}
 
   const compatible_seed =
     sram["rom_name"] &&
@@ -65,11 +65,13 @@ export function RandomSender() {
 
   useEffect(() => {
     if (!config) return
-    if ('categories' in JSON.parse(lsConfigs[config])) {
-      allCategories = {
-        ...allCategories,
-        ...JSON.parse(lsConfigs[config]).categories,
-      }
+    if ('categories' in JSON.parse(lsConfigs[config]).settings) {
+      setAllCategories({
+        ...definedCategories,
+        ...JSON.parse(lsConfigs[config]).settings.categories,
+      })
+    } else {
+      setAllCategories(definedCategories)
     }
 
   }, [config])
@@ -86,7 +88,7 @@ export function RandomSender() {
   }, [seed_name, started])
 
   useEffect(() => {
-    if (!started || !sram || !ingame) return
+    if (!started || !sram || !ingame || Object.keys(allCategories).length === 0) return
     const prev_ix = sram["multiinfo"][0] * 256 + sram["multiinfo"][1]
     const itemsToSend = getItemsToSend(
       lsGames[seed_name].seed,
