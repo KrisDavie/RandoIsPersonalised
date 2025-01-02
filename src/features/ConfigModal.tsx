@@ -51,6 +51,7 @@ export function ConfigModal() {
   const handleDeleteConfig = () => {
     const newConfigs = { ...lsConfigs }
     delete newConfigs[selectedConfig]
+    // TODO
     setLSConfigs(newConfigs)
     setSelectedConfig("")
   }

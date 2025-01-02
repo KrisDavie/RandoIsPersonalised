@@ -37,7 +37,7 @@ function Header() {
   const sram = useReadSRAMQuery(
     {},
     {
-      pollingInterval: 750,
+      pollingInterval: 250,
     },
   ).data
 

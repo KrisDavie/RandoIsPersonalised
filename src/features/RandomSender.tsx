@@ -9,6 +9,8 @@ import { Checkbox } from "@/components/ui/checkbox"
 import ItemDisplayPanel from "./ItemDisplayPanel"
 import seedrandom from "seedrandom"
 import { Separator } from "@/components/ui/separator"
+import { formatDistanceToNowStrict, addSeconds } from 'date-fns'
+
 import {
   categories as definedCategories,
   items as definedItems,
@@ -31,6 +33,7 @@ export function RandomSender() {
   const [config, setConfig] = useState("")
   const [seededRun, setSeededRun] = useState(false)
   const [rngSeed, setRngSeed] = useState("")
+  const [timeToNextItem, setTimeToNextItem] = useState(0)
   const [allCategories, setAllCategories] = useState<ICategories>({})
   const sram: SRAM = useAppSelector((state) => state.sni.sram)
   const sentItems = useAppSelector((state) => state.sni.itemHistory)
@@ -207,7 +210,10 @@ export function RandomSender() {
           itemHistory.push(curItem)
         }
       }
-      if (cumulativeTime >= minutes) break
+      if (cumulativeTime >= minutes) {
+        setTimeToNextItem(((cumulativeTime - minutes) * 60))
+        break
+      }
     }
     // TODO: History should include idx to show previous items from a reset etc.
     dispatch(setItemHistory(itemHistory))
@@ -255,7 +261,12 @@ export function RandomSender() {
       {rngSeed && `RNG Seed: ${rngSeed.toString()}`}
       <br />
       <br />
-      IGT: {new Date(game_time_seconds * 1000).toISOString().slice(11, 19)}
+      In-game Time: {new Date(game_time_seconds * 1000).toISOString().slice(11, 19)}
+      <br />
+      Next item in: {formatDistanceToNowStrict(addSeconds(new Date(), timeToNextItem), )}
+      <br />
+      <br />
+      Received Items:
       <ItemDisplayPanel sentItems={sentItems} />
       <Separator className="my-4" orientation="horizontal" />
       <div className="flex items-center space-x-2 mb-2">
