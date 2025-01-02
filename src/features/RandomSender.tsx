@@ -187,7 +187,6 @@ export function RandomSender() {
       }
     })
     let itemCount = 0
-    let cumulativeTime = 0
     let itemsToSend: [string, number][] = []
     let itemHistory: [string, number][] = []
     for (let interval of intervals) {
@@ -195,6 +194,7 @@ export function RandomSender() {
       const int_count = Math.round(int_length / interval[1].frequency)
       let curItem: [string, number]
       let intervalCount = 0
+      let cumulativeTime = interval[1].start
       for (let i = 0; i < int_count; i++) {
         itemCount++
         intervalCount++
